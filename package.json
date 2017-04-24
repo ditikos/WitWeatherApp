@@ -15,7 +15,6 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.13.1",
-    "node-wit": "^4.2.0",
-    "request": "^2.81.0"
+    "node-wit": "^4.2.0"
   }
 }
