@@ -9,6 +9,8 @@
 const { Wit, log, interactive } = require('node-wit');
 const axios = require('axios');
 
+var accessToken = ''; // ADD THIS FROM wit.ai platform Settings(Server Access Token)
+
 // firstEntityValue will get the entity value from the 
 // pool of entities (parameters passed into the Action)
 // If the entity is complex (or object) then it will return object
@@ -34,7 +36,7 @@ var clear_context = false;
 // Optional:
 //          logger object
 const client = new Wit({
-    accessToken: 'OWNWTZCKK7MZX4KRLUUYOUA3AY76L3HW',
+    accessToken: accessToken,
     actions: {
         send(request, response) {
             console.log(JSON.stringify(response));
